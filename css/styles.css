@@ -133,4 +133,13 @@ ul {
     color: #333;
 }
 
+.event-pictures {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+
 
