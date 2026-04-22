@@ -134,9 +134,9 @@ ul {
 }
 
 .event-pictures {
-    max-width: 20px;
+    max-width: 80px;
     height: auto;
-    border-radius: 7px;
+    border-radius: 10px;
     margin: 15px 15px;
 }
 
