@@ -133,7 +133,7 @@ ul {
     color: #333;
 }
 
-.event-pictures img {
+.event-pictures {
     max-width: 20px;
     height: auto;
     border-radius: 7px;
