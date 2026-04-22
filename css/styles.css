@@ -135,6 +135,7 @@ ul {
 
 .event-pictures {
     width: 100%;
+    float: center
     max-width: 200px;
     height: auto;
     border-radius: 10px;
