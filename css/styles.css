@@ -133,11 +133,38 @@ ul {
     color: #333;
 }
 
+/* FIXED EVENT PICTURES — only corrected the broken line */
 .event-pictures {
     width: 100%;
-    float: center
     max-width: 330px;
     height: auto;
     border-radius: 10px;
     margin: 20px 0;
+    display: block;
+}
+
+/* ---------------------------------------------------
+   HEADER FIXES YOU ASKED FOR
+   (bigger logo + page links to the RIGHT)
+---------------------------------------------------- */
+
+/* Make header a row */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* pushes nav to the RIGHT */
+    padding: 15px 20px;
+    text-align: left; /* override old center alignment */
+}
+
+/* Make logo bigger */
+.logo {
+    max-width: 260px; /* you can increase this if you want */
+    margin-bottom: 0;
+}
+
+/* Keep nav styling the same, just let flexbox move it */
+nav {
+    background-color: #4a7c59;
+    padding: 10px 20px;
 }
