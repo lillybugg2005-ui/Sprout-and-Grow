@@ -1,65 +1,143 @@
-body {
+/* Basic CSS file for Sprout & Grow website */
+/* Author: Lillian – WEB 140 Final Project */
+
+/* Reset + base font */
+body, html {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    color: #333;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8f3e5;
+    color: #1f2d1f;
 }
 
-/* HEADER */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    padding: 15px 30px;
-    background-color: #2d5a27; /* same color as before */
+/* Header + Footer */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
 }
 
+/* Logo */
 .logo {
-    max-width: 300px;  /* bigger logo */
+    max-width: 180px;
     height: auto;
+    margin-bottom: 10px;
 }
 
+/* Navigation Bar */
 nav {
-    display: flex;
-    gap: 20px;
-    margin-top: 0; /* remove extra top gap from old style */
+    background-color: #4a7c59;
+    padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    margin: 0; /* flex gap handles spacing now */
-
-/* FEATURE IMAGE (home page) */
-.feature-image {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 20px auto;
+    margin: 0 15px;
+    padding: 8px 12px;
+    font-weight: bold;
 }
 
-/* EVENT IMAGES (events page) */
-.event-pictures {
-    max-width: 120px;
-    height: auto;
-    border-radius: 120px;
-    margin: 10px 10px;
+nav a:hover {
+    background-color: #355c3a;
+    border-radius: 4px;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    background-color: #2d5a27;
-    color: white;
+/* Main Content */
+main {
     padding: 20px;
-    margin-top: 40px;
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
 }
 
+/* Headings */
+h1, h2, h3 {
+    color: #2f4f2f;
+}
+
+/* Feature Image */
+.feature-img {
+    max-width: 20%;
+    float: right;
+    margin: 0 0 15px 15px;
+    border-radius: 6px;
+}
+
+/* Footer Icons */
 footer img {
     width: 30px;
+    height: 30px;
     margin: 0 10px;
+}
+
+/* Make footer stay at bottom */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Footer text spacing */
+footer p {
+    margin: 8px 0;
+}
+
+/* List styling */
+ul {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Product Cards */
+.product-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+    color: #2f4f2f;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #4a7c59;
+    margin-bottom: 8px;
+}
+
+.product-card .desc {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.event-pictures {
+    width: 100%;
+    float: center
+    max-width: 330px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
 }
